@@ -1,6 +1,5 @@
 Here is the updated README.md with the added section explaining the usage of Spark ALS for the recommendation model and how ALS works:
 
-```markdown
 <div align="center">
 
 <p align="center">
