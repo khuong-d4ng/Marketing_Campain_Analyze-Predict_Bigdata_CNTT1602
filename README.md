@@ -1,3 +1,6 @@
+Here is the updated README.md with the added section explaining the usage of Spark ALS for the recommendation model and how ALS works:
+
+```markdown
 <div align="center">
 
 <p align="center">
@@ -11,7 +14,7 @@
 
 # Marketing Campaign Analysis and Prediction
 
-This repository contains a comprehensive analysis and prediction of marketing campaigns using big data techniques. The project leverages Apache Spark for data processing and analysis, and builds a recommendation system to suggest products to customers.
+This repository contains a comprehensive analysis and prediction of marketing campaigns using big data techniques. The project leverages Apache Spark for data processing and analysis, and builds a recommendation system using the Alternating Least Squares (ALS) algorithm.
 
 ## Table of Contents
 
@@ -20,12 +23,13 @@ This repository contains a comprehensive analysis and prediction of marketing ca
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Analysis and Results](#analysis-and-results)
+- [Recommendation System](#recommendation-system)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
 
-The goal of this project is to analyze marketing campaign data and predict customer behavior. By using Spark, we can efficiently process large datasets and extract meaningful insights. The project also includes a recommendation system to suggest products to customers based on their past purchases.
+The goal of this project is to analyze marketing campaign data and predict customer behavior. By using Spark, we can efficiently process large datasets and extract meaningful insights. The project also includes a recommendation system built using the ALS algorithm in Spark.
 
 ## Installation
 
@@ -79,10 +83,22 @@ The notebook `marketing_campain_anlyze&predict.ipynb` includes the following sec
 5. **Recommendation System**: Build and evaluate a recommendation system using ALS (Alternating Least Squares).
 6. **Visualization of Recommendations**: Visualize the top product recommendations for users.
 
+## Recommendation System
+
+### Spark ALS Algorithm
+
+The recommendation system in this project is built using the Alternating Least Squares (ALS) algorithm provided by Apache Spark. ALS is a matrix factorization technique used in collaborative filtering to make personalized recommendations.
+
+### How ALS Works
+
+ALS works by decomposing the user-item interaction matrix into two lower-dimensional matrices, one representing users and the other representing items. The algorithm alternates between fixing the user matrix and solving for the item matrix, and vice versa, to minimize the reconstruction error of the original matrix. The result is a set of latent features for users and items that can be used to predict user preferences for items they have not yet interacted with.
+
+In this project, we use the ALS algorithm to predict the likelihood of a user reordering a product based on their past behavior. The model is trained on historical order data, and the top product recommendations for each user are generated based on the predicted reorder probabilities.
+
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, please create an issue or submit a pull request.
 
 ## License
 
-CNTT1602 Group x
+CNTT1602 Group 9
