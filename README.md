@@ -1,3 +1,16 @@
+<div align="center">
+
+<p align="center">
+   <img src="docs/images/logo.png" alt="DaiNam University Logo" width="200"/>
+   <img src="docs/images/AIoTLab_logo.png" alt="AIoTLab Logo" width="170"/>
+</p>
+
+[![Made by AIoTLab](https://img.shields.io/badge/Made%20by%20AIoTLab-blue?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
+[![Fit DNU](https://img.shields.io/badge/Fit%20DNU-green?style=for-the-badge)](https://fitdnu.net/)
+[![DaiNam University](https://img.shields.io/badge/DaiNam%20University-red?style=for-the-badge)](https://dainam.edu.vn)
+
+</div>
+
 # Marketing Campaign Analysis and Prediction
 
 This repository contains a comprehensive analysis and prediction of marketing campaigns using big data techniques. The project leverages Apache Spark for data processing and analysis, and builds a recommendation system to suggest products to customers.
